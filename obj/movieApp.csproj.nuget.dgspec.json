@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "d:\\interviews\\consid\\movieApp\\movieApp.csproj": {}
+    "D:\\interviews\\consid\\movieApp\\movieApp.csproj": {}
   },
   "projects": {
-    "d:\\interviews\\consid\\movieApp\\movieApp.csproj": {
+    "D:\\interviews\\consid\\movieApp\\movieApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\interviews\\consid\\movieApp\\movieApp.csproj",
+        "projectUniqueName": "D:\\interviews\\consid\\movieApp\\movieApp.csproj",
         "projectName": "movieApp",
-        "projectPath": "d:\\interviews\\consid\\movieApp\\movieApp.csproj",
+        "projectPath": "D:\\interviews\\consid\\movieApp\\movieApp.csproj",
         "packagesPath": "C:\\Users\\Ugur\\.nuget\\packages\\",
-        "outputPath": "d:\\interviews\\consid\\movieApp\\obj\\",
+        "outputPath": "D:\\interviews\\consid\\movieApp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Ugur\\AppData\\Roaming\\NuGet\\NuGet.Config"
