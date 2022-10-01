@@ -15,12 +15,12 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
-        return View(Repository.Movies);
+        return View(ProductRepository.Movies);
     }
     
     public IActionResult Details(int id)
     {
-        return View(Repository.GetById(id));
+        return View(ProductRepository.GetById(id));
     }
 
     public IActionResult Contact()
