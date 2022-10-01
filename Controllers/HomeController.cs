@@ -17,6 +17,11 @@ public class HomeController : Controller
     {
         return View(Repository.Movies);
     }
+    
+    public IActionResult Details(int id)
+    {
+        return View(Repository.GetById(id));
+    }
 
     public IActionResult Contact()
     {
