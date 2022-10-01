@@ -1,5 +1,6 @@
 ﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
+using movieApp.Data;
 using movieApp.Models;
 
 namespace movieApp.Controllers;
