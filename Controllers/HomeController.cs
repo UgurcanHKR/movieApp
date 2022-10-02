@@ -18,20 +18,20 @@ public class HomeController : Controller
     {
         //ProductRepository.Movies
         //CategoryRepository.Categories
-        MovieCategoryModel model = new MovieCategoryModel();
-        model.Categories = CategoryRepository.Categories;
-        model.Movies = MovieRepository.Movies;
+        //MovieCategoryModel model = new MovieCategoryModel();
+        //model.Categories = CategoryRepository.Categories;
+        //model.Movies = MovieRepository.Movies;
 
-        return View(model);
+        return View(MovieRepository.Movies);
     }
     
     public IActionResult Details(int id)
     {
-        MovieCategoryModel model = new MovieCategoryModel();
-        model.Categories = CategoryRepository.Categories;
-        model.Movie = MovieRepository.GetById(id);
+        //MovieCategoryModel model = new MovieCategoryModel();
+        //model.Categories = CategoryRepository.Categories;
+        //model.Movie = MovieRepository.GetById(id);
 
-        return View(model);
+        return View(MovieRepository.GetById(id));
     }
 
     public IActionResult Contact()
