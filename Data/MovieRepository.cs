@@ -6,11 +6,11 @@ using movieApp.Models;
 
 namespace movieApp.Data
 {
-    public class ProductRepository
+    public class MovieRepository
     {
         private static List<Movie> _movies = null;
 
-        static ProductRepository(){
+        static MovieRepository(){
             _movies = new List<Movie>(){
                 new Movie() {Id=1,Name="The Bridge",ShortDescription="The Bridge",Description="<p>When a body is found on the bridge between Denmark and Sweden, right on the border, Danish inspector Martin Rohde and Swedish Saga Norén have to share jurisdiction and work together to find the killer.</p>",ImageUrl="1.jpg"},
                 new Movie() {Id=2,Name="North Sea Connection",ShortDescription="North Sea Connection",Description="<p>The stunning scenery of Ireland's west coast conceals a dark secret in 'North Sea Connection', in which Ciara must confront the dramatic consequences of her brother Aidan's decision to transport drugs at sea.</p>",ImageUrl="2.jpg"},
