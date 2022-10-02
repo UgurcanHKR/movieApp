@@ -7,22 +7,22 @@ namespace movieApp.Controllers;
 
 public class HomeController : Controller
 {
-    private readonly ILogger<HomeController> _logger;
-
-    public HomeController(ILogger<HomeController> logger)
-    {
-        _logger = logger;
-    }
-
-    public IActionResult Index()
+    // Home/Index/3
+    public IActionResult Index(int? id)
     {
         //ProductRepository.Movies
         //CategoryRepository.Categories
         //MovieCategoryModel model = new MovieCategoryModel();
         //model.Categories = CategoryRepository.Categories;
         //model.Movies = MovieRepository.Movies;
+        var movies = MovieRepository.Movies;
 
-        return View(MovieRepository.Movies);
+        if (id!=null)
+        {
+            movies = movies.Where(i=>i.CategoryId == id).ToList();
+        }
+
+        return View(movies);
     }
     
     public IActionResult Details(int id)
